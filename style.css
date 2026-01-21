@@ -10,27 +10,27 @@ body {
   color: #222;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 .header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid #eee;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .nav {
   max-width: 1200px;
   margin: auto;
   padding: 14px 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between; /* IMPORTANT */
 }
 
-/* LOGO */
+/* Logo */
 .logo {
   font-size: 22px;
   font-weight: 700;
@@ -38,9 +38,10 @@ body {
   white-space: nowrap;
 }
 
-/* MENU */
+/* Menu */
 .menu {
   display: flex;
+  justify-content: center;
   gap: 28px;
 }
 
@@ -51,7 +52,7 @@ body {
   white-space: nowrap;
 }
 
-/* ACTIONS (Language + Sign In) */
+/* Actions */
 .actions {
   display: flex;
   align-items: center;
@@ -59,7 +60,7 @@ body {
   white-space: nowrap;
 }
 
-/* LANGUAGE BUTTON */
+/* Language button */
 .lang-btn {
   display: flex;
   align-items: center;
@@ -81,17 +82,17 @@ body {
   outline: none;
 }
 
-/* SIGN IN BUTTON */
+/* Sign in button */
 .btn.primary {
   background: #f97316;
-  color: white;
+  color: #fff;
   border-radius: 999px;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .hero {
   padding: 140px 20px 60px;
   text-align: center;
@@ -119,25 +120,5 @@ body {
   font-size: 16px;
 }
 
-/* SECTIONS */
+/* ================= SECTIONS ================= */
 section {
-  max-width: 1200px;
-  margin: auto;
-  padding: 60px 20px;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-/* CARDS */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  p
