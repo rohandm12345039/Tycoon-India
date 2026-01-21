@@ -180,3 +180,18 @@ h2 {
   outline: none;
 }
 
+/* Header actions alignment */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header .actions {
+  flex-wrap: nowrap;
+}
+
+/* Language button size fix */
+.lang-btn {
+  padding: 12px 18px;
+}
