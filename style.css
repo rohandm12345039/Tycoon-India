@@ -93,19 +93,25 @@ body {
 }
 
 /* ================= HERO ================= */
+.hero {
+  text-align: center;
+}
+
 .hero h1 {
-  font-size: 56px;          /* bigger like first image */
-  font-weight: 800;        /* bolder */
-  color: #22c55e;
+  font-size: 64px;
+  font-weight: 800;
+  color: #4ade80;   /* light green like 2nd image */
   letter-spacing: -0.5px;
 }
 
+
 .tagline {
-  font-size: 24px;         /* slightly bigger */
-  font-weight: 500;        /* lighter than title */
+  font-size: 28px;
+  font-weight: 500;
   margin: 14px 0 18px;
   color: #3b2f23;
 }
+
 
 .desc {
   max-width: 780px;
