@@ -122,3 +122,81 @@ body {
 
 /* ================= SECTIONS ================= */
 section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ================= CARDS ================= */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* ================= ACTION GRID ================= */
+.actions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.action {
+  padding: 40px;
+  font-size: 18px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.create { background: #f97316; }
+.promote { background: #22c55e; }
+.learn { background: #22c55e; }
+.help { background: #fde68a; color: #000; }
+
+/* ================= WHATSAPP ================= */
+.whatsapp {
+  background: #22c55e;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background: white;
+  padding: 40px;
+  margin-top: 60px;
+}
+
+/* ================= CHAT BUTTON ================= */
+.chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #22c55e;
+  color: white;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
