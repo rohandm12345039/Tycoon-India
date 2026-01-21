@@ -98,11 +98,11 @@ body {
 }
 
 .hero h1 {
-  font-size: 56px;          /* bigger like first image */
-  font-weight: 500;        /* bolder */
-  color: #22c55e;
-  letter-spacing: -0.5px;
+  font-size: 64px;
+  font-weight: 400;   /* thinner */
+  color: #4ade80;
 }
+
 
 .tagline {
   font-size: 24px;         /* slightly bigger */
