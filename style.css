@@ -176,4 +176,7 @@ h2 {
 .lang-btn:hover {
   background: #f9f1e6;
 }
+.lang-btn:focus {
+  outline: none;
+}
 
