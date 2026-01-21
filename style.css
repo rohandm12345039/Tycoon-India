@@ -96,6 +96,11 @@ body {
 .hero {
   text-align: center;
 }
+.hero {
+  padding: 200px 20px 80px;  /* MORE space from navbar */
+  text-align: center;
+}
+
 
 .hero h1 {
   font-size: 64px;
