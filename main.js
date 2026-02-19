@@ -1,4 +1,4 @@
-// ===== Supabase Init =====
+// ===== SUPABASE INIT =====
 const SUPABASE_URL = "https://vpspctvqozslesrqcpdz.supabase.co";
 const SUPABASE_KEY = "sb_publishable_onkRSlaZfvgbDvuBAisiWw_whg2NiJc";
 
@@ -27,17 +27,21 @@ function showLoggedInUI(user) {
     </div>
   `;
 
-  document.getElementById("logoutBtn").onclick = async () => {
+  document.getElementById("logoutBtn").addEventListener("click", async () => {
     await supabase.auth.signOut();
     showLoggedOutUI();
-  };
+  });
 }
 
-// ===== CHECK SESSION ON LOAD =====
-supabase.auth.getUser().then(({ data }) => {
-  if (data.user) {
-    showLoggedInUI(data.user);
+// ===== CHECK SESSION ON PAGE LOAD =====
+async function initAuth() {
+  const { data: { user } } = await supabase.auth.getUser();
+
+  if (user) {
+    showLoggedInUI(user);
   } else {
     showLoggedOutUI();
   }
-});
+}
+
+initAuth();
