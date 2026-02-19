@@ -46,7 +46,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (result.error) {
       alert(result.error.message);
     } else {
-      window.location.href = "index.html";
+      setTimeout(() => {
+  window.location.href = "index.html";
+}, 800);
     }
   });
 });
