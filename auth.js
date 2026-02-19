@@ -10,33 +10,30 @@ const signinTab = document.getElementById("signinTab");
 const signupTab = document.getElementById("signupTab");
 const submitBtn = document.getElementById("submitBtn");
 const form = document.getElementById("authForm");
-
-if (!signinTab || !signupTab || !submitBtn || !form) {
-  console.error("Auth elements missing in HTML");
-}
-
+const emailInput = document.getElementById("email");
+const passwordInput = document.getElementById("password");
 
 let mode = "signin";
 
-signinTab.onclick = () => {
+signinTab.addEventListener("click", () => {
   mode = "signin";
   signinTab.classList.add("active");
   signupTab.classList.remove("active");
   submitBtn.innerText = "Sign In";
-};
+});
 
-signupTab.onclick = () => {
+signupTab.addEventListener("click", () => {
   mode = "signup";
   signupTab.classList.add("active");
   signinTab.classList.remove("active");
   submitBtn.innerText = "Create Account";
-};
+});
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const email = form.querySelector('input[type="email"]').value;
-  const password = form.querySelector('input[type="password"]').value;
+  const email = emailInput.value;
+  const password = passwordInput.value;
 
   let result;
 
@@ -49,7 +46,6 @@ form.addEventListener("submit", async (e) => {
   if (result.error) {
     alert(result.error.message);
   } else {
-    alert("Success!");
-    window.location.href = "index.html"; // redirect after login
+    window.location.href = "index.html";
   }
 });
