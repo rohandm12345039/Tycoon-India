@@ -92,12 +92,14 @@ body {
 
 
 .hero-desc {
-  max-width: 720px;          /* controls line break */
-  margin: 0 auto 20px;
+  max-width: 600px;
+  margin: 0 auto 22px;
   font-size: 18px;
-  line-height: 1.8;
+  line-height: 1.7;
   color: #7a5c3a;
+  text-align: center;   /* THIS fixes the middle alignment */
 }
+
 
 
 .hero-desc.long {
