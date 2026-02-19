@@ -1,34 +1,5 @@
-document.addEventListener("DOMContentLoaded", async () => {
+document.addEventListener("DOMContentLoaded", () => {
   const authDiv = document.getElementById("authActions");
-
-  // 1️⃣ CHECK EXISTING SESSION ON LOAD
-  const { data: { session } } = await supabase.auth.getSession();
-
-  if (session) {
-    showUser(session.user);
-  }
-
-  // 2️⃣ LISTEN FOR LOGIN / LOGOUT CHANGES
-  supabase.auth.onAuthStateChange((_event, session) => {
-    if (session) {
-      showUser(session.user);
-    } else {
-      showSignedOut();
-    }
-  });
-
-  function showUser(user) {
-    const letter = user.email[0].toUpperCase();
-
-    authDiv.innerHTML = `
-      <div class="user-circle">${letter}</div>
-      <button class="logout-btn" id="logoutBtn">Logout</button>
-    `;
-
-    document.getElementById("logoutBtn").onclick = async () => {
-      await supabase.auth.signOut();
-    };
-  }
 
   function showSignedOut() {
     authDiv.innerHTML = `
@@ -36,4 +7,32 @@ document.addEventListener("DOMContentLoaded", async () => {
       <a href="auth.html" class="btn primary">Sign In</a>
     `;
   }
+
+  function showUser(user) {
+    const letter = user.email[0].toUpperCase();
+    authDiv.innerHTML = `
+      <div class="user-circle">${letter}</div>
+      <button class="logout-btn" id="logoutBtn">Logout</button>
+    `;
+    document.getElementById("logoutBtn").onclick = async () => {
+      await supabase.auth.signOut();
+      location.reload();
+    };
+  }
+
+  // 🔥 CHECK SESSION TWICE (this is the key)
+  async function checkAuth() {
+    const { data } = await supabase.auth.getUser();
+    if (data && data.user) {
+      showUser(data.user);
+    } else {
+      showSignedOut();
+    }
+  }
+
+  // First check
+  checkAuth();
+
+  // Second check after delay (GitHub Pages fix)
+  setTimeout(checkAuth, 1000);
 });
