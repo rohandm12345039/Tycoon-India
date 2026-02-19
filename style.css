@@ -26,8 +26,10 @@ body {
   margin: auto;
   padding: 18px;
   display: flex;
-  align-items: center;
+  align-items: center;   /* ✅ already correct */
+  justify-content: space-between; /* ✅ ADD THIS */
 }
+
 
 .logo {
   font-size: 22px;
