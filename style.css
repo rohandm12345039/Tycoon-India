@@ -273,3 +273,12 @@ h2 {
   border: none;
   font-size: 24px;
 }
+
+/* Remove underline from Sign In button */
+.btn,
+.btn:link,
+.btn:visited,
+.btn:hover,
+.btn:active {
+  text-decoration: none !important;
+}
