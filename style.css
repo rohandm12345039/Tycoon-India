@@ -184,3 +184,40 @@ h2 {
   font-size: 24px;
   border: none;
 }
+
+/* Feature cards */
+.feature-cards {
+  margin-top: 40px;
+}
+
+.feature-card {
+  padding: 32px 24px;
+  border: 1px solid #eadfcf;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: none;
+}
+
+.feature-card .icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: #fff3e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #2b1d10;
+}
+
+.feature-card p {
+  font-size: 15px;
+  color: #8a6a4f;
+}
