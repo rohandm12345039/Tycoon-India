@@ -29,7 +29,6 @@ body {
   align-items: center;
 }
 
-
 .logo {
   font-size: 22px;
   font-weight: 700;
@@ -57,60 +56,45 @@ body {
   padding: 10px 18px;
   border-radius: 999px;
   background: #fdf7ee;
-  border: 1px solid #e5d8c3;
-  cursor: pointer;
+  border: 1px solid #eadfcf;
 }
 
 .btn.primary {
   background: #f97316;
   color: white;
-  border: none;
   padding: 10px 18px;
   border-radius: 999px;
+  text-decoration: none;
 }
 
 /* HERO */
 .hero {
-  padding: 160px 20px 70px;   /* space from navbar */
+  padding: 180px 20px 90px;
   text-align: center;
 }
 
-
 .hero-title {
   font-size: 64px;
-  font-weight: 500;          /* thinner */
-  letter-spacing: -0.5px;
+  font-weight: 500;
   color: #4ade80;
-  margin-bottom: 12px;
 }
-
 
 .hero-tagline {
   font-size: 28px;
-  font-weight: 400;
-  margin-bottom: 22px;
+  margin: 14px 0;
 }
-
 
 .hero-desc {
   max-width: 600px;
-  margin: 0 auto 22px;
+  margin: 0 auto 20px;
   font-size: 18px;
   line-height: 1.7;
-  color: #7a5c3a;
-  text-align: center;   /* THIS fixes the middle alignment */
 }
-
-
 
 .hero-desc.long {
   max-width: 820px;
-  margin: 0 auto;
   font-size: 16px;
-  line-height: 1.9;
-  color: #7a5c3a;
 }
-
 
 /* SECTIONS */
 .section {
@@ -136,8 +120,9 @@ h2 {
   gap: 24px;
 }
 
-.card-grid.two { grid-template-columns: repeat(2,1fr); }
-.card-grid.three { grid-template-columns: repeat(3,1fr); }
+.card-grid.three {
+  grid-template-columns: repeat(3,1fr);
+}
 
 .card {
   background: white;
@@ -173,81 +158,30 @@ h2 {
 .create { background: #f59e0b; }
 .promote { background: #22c55e; }
 .learn { background: #22c55e; }
-.help { background: #fef3c7; color: #3b2f23; }
-
-/* WHATSAPP */
-.whatsapp {
-  background: #22c55e;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-  border-radius: 24px;
-  max-width: 900px;
-  margin: 80px auto;
-}
-
-.btn.secondary {
-  margin-top: 20px;
-  background: white;
-  color: #22c55e;
-  padding: 12px 24px;
-  border-radius: 999px;
-  border: none;
-}
+.help { background: #fde68a; color: #3b2f23; }
 
 /* FOOTER */
 .footer {
-  background: #ffffff;
+  background: white;
   padding: 60px 20px 30px;
-  border-top: 1px solid #eee;
 }
 
 .footer-container {
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4,1fr);
   gap: 40px;
 }
 
-.footer-col h4 {
-  font-size: 18px;
-  margin-bottom: 16px;
-  color: #2d1b0e;
+.footer h4 {
+  margin-bottom: 14px;
 }
 
-.footer-col p {
+.footer p {
+  font-size: 14px;
   color: #7a5c3a;
-  line-height: 1.7;
   margin-bottom: 10px;
-  font-size: 14px;
-}
-
-.whatsapp-btn {
-  margin-top: 10px;
-  padding: 12px 18px;
-  border-radius: 12px;
-  border: 1px solid #eadfcf;
-  background: #fff7ea;
-  cursor: pointer;
-}
-
-.socials {
-  display: flex;
-  gap: 12px;
-  margin-top: 12px;
-}
-
-.socials span {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 1px solid #eadfcf;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  cursor: pointer;
 }
 
 .footer-bottom {
@@ -255,11 +189,8 @@ h2 {
   padding-top: 20px;
   border-top: 1px solid #eee;
   text-align: center;
-  color: #7a5c3a;
   font-size: 14px;
 }
-
-
 
 /* CHAT */
 .chat {
@@ -273,57 +204,4 @@ h2 {
   color: white;
   border: none;
   font-size: 24px;
-}
-
-/* Remove underline from Sign In button */
-.btn,
-.btn:link,
-.btn:visited,
-.btn:hover,
-.btn:active {
-  text-decoration: none !important;
-}
-
-.user-menu {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.avatar {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: #f97316;
-  color: #fff;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.email {
-  font-size: 14px;
-  color: #333;
-}
-
-.user-menu button {
-  border: none;
-  background: none;
-  color: #f97316;
-  cursor: pointer;
-  font-weight: 500;
-}
-
-.btn-signin {
-  background: #f97316;
-  color: #fff;
-  padding: 10px 18px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.btn-signin:hover {
-  background: #ea6a0b;
 }
