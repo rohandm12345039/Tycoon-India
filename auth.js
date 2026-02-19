@@ -11,6 +11,11 @@ const signupTab = document.getElementById("signupTab");
 const submitBtn = document.getElementById("submitBtn");
 const form = document.getElementById("authForm");
 
+if (!signinTab || !signupTab || !submitBtn || !form) {
+  console.error("Auth elements missing in HTML");
+}
+
+
 let mode = "signin";
 
 signinTab.onclick = () => {
