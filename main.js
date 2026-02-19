@@ -16,12 +16,12 @@ async function loadUser() {
     const letter = email[0].toUpperCase();
 
     authArea.innerHTML = `
-      <div class="user-menu">
-        <div class="avatar">${letter}</div>
-        <span class="email">${email}</span>
-        <button id="logoutBtn">Logout</button>
-      </div>
-    `;
+  <div class="user-menu">
+    <div class="avatar" title="${email}">${letter}</div>
+    <button id="logoutBtn">Logout</button>
+  </div>
+`;
+;
 
     document.getElementById("logoutBtn").onclick = async () => {
       await supabase.auth.signOut();
