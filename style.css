@@ -196,38 +196,57 @@ h2 {
 
 /* FOOTER */
 .footer {
-  background: #fff;
+  background: #ffffff;
   padding: 60px 20px 30px;
   border-top: 1px solid #eee;
 }
 
-.footer-grid {
+.footer-container {
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 40px;
 }
 
-.footer h4 {
+.footer-col h4 {
   font-size: 18px;
   margin-bottom: 16px;
+  color: #2d1b0e;
 }
 
-.footer p {
+.footer-col p {
   color: #7a5c3a;
   line-height: 1.7;
-}
-
-.footer a {
-  display: block;
-  color: #7a5c3a;
-  text-decoration: none;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
-.footer a:hover {
-  text-decoration: underline;
+.whatsapp-btn {
+  margin-top: 10px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: 1px solid #eadfcf;
+  background: #fff7ea;
+  cursor: pointer;
+}
+
+.socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.socials span {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #eadfcf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .footer-bottom {
@@ -238,6 +257,7 @@ h2 {
   color: #7a5c3a;
   font-size: 14px;
 }
+
 
 
 /* CHAT */
