@@ -4,8 +4,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const { data: { session } } = await supabase.auth.getSession();
 
   if (session) {
-    const email = session.user.email;
-    const letter = email[0].toUpperCase();
+    const letter = session.user.email[0].toUpperCase();
 
     authDiv.innerHTML = `
       <div class="user-circle">${letter}</div>
