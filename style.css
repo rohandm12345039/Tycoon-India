@@ -70,31 +70,44 @@ body {
 
 /* HERO */
 .hero {
-  padding: 170px 20px 90px;
+  padding: 160px 20px 70px;   /* space from navbar */
   text-align: center;
 }
 
+
 .hero-title {
   font-size: 64px;
-  font-weight: 500;
+  font-weight: 500;          /* thinner */
+  letter-spacing: -0.5px;
   color: #4ade80;
+  margin-bottom: 12px;
 }
+
 
 .hero-tagline {
-  font-size: 26px;
-  margin: 14px 0;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 22px;
 }
+
 
 .hero-desc {
-  max-width: 800px;
-  margin: 18px auto;
-  color: #7a5c3a;
+  max-width: 720px;          /* controls line break */
+  margin: 0 auto 20px;
+  font-size: 18px;
   line-height: 1.8;
+  color: #7a5c3a;
 }
 
+
 .hero-desc.long {
+  max-width: 820px;
+  margin: 0 auto;
   font-size: 16px;
+  line-height: 1.9;
+  color: #7a5c3a;
 }
+
 
 /* SECTIONS */
 .section {
