@@ -188,7 +188,11 @@ h2 {
 /* Feature cards */
 .feature-cards {
   margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards side by side */
+  gap: 24px;
 }
+
 
 .feature-card {
   padding: 32px 24px;
