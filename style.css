@@ -196,12 +196,49 @@ h2 {
 
 /* FOOTER */
 .footer {
-  background: white;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 30px;
-  padding: 50px;
+  background: #fff;
+  padding: 60px 20px 30px;
+  border-top: 1px solid #eee;
 }
+
+.footer-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.footer h4 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.footer p {
+  color: #7a5c3a;
+  line-height: 1.7;
+}
+
+.footer a {
+  display: block;
+  color: #7a5c3a;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  text-align: center;
+  color: #7a5c3a;
+  font-size: 14px;
+}
+
 
 /* CHAT */
 .chat {
