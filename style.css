@@ -7,26 +7,25 @@
 
 body {
   background: #fdf7ee;
-  color: #222;
+  color: #3b2f23;
 }
 
-/* ================= HEADER ================= */
+/* HEADER */
 .header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.9);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid #eee;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .nav {
   max-width: 1200px;
   margin: auto;
-  padding: 14px 20px;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  padding: 18px;
+  display: flex;
   align-items: center;
 }
 
@@ -37,20 +36,19 @@ body {
 }
 
 .menu {
+  flex: 1;
   display: flex;
   justify-content: center;
-  gap: 28px;
+  gap: 26px;
 }
 
 .menu a {
   text-decoration: none;
   color: #555;
-  font-size: 15px;
 }
 
 .actions {
   display: flex;
-  align-items: center;
   gap: 12px;
 }
 
@@ -58,199 +56,148 @@ body {
   padding: 10px 18px;
   border-radius: 999px;
   background: #fdf7ee;
-  border: 1px solid #e8dcc8;
-  font-size: 14px;
+  border: 1px solid #e5d8c3;
   cursor: pointer;
 }
 
 .btn.primary {
   background: #f97316;
   color: white;
-  padding: 10px 20px;
-  border-radius: 999px;
   border: none;
-  cursor: pointer;
+  padding: 10px 18px;
+  border-radius: 999px;
 }
 
-/* ================= HERO ================= */
+/* HERO */
 .hero {
-  padding-top: 200px;
-  padding-bottom: 80px;
+  padding: 170px 20px 90px;
   text-align: center;
 }
 
-.hero h1 {
+.hero-title {
   font-size: 64px;
-  font-weight: 500;   /* thinner */
-  color: #4ade80;
-  margin-bottom: 14px;
-}
-
-.tagline {
-  font-size: 28px;
   font-weight: 500;
-  margin-bottom: 20px;
-  color: #3b2f23;
+  color: #4ade80;
 }
 
-.desc {
-  max-width: 780px;
-  margin: 14px auto;
-  font-size: 17px;
+.hero-tagline {
+  font-size: 26px;
+  margin: 14px 0;
+}
+
+.hero-desc {
+  max-width: 800px;
+  margin: 18px auto;
+  color: #7a5c3a;
   line-height: 1.8;
-  color: #7a5c3e;
 }
 
-.desc.long {
-  font-size: 16.5px;
+.hero-desc.long {
+  font-size: 16px;
 }
 
-/* ================= SECTIONS ================= */
-section {
+/* SECTIONS */
+.section {
   max-width: 1200px;
   margin: auto;
-  padding: 60px 20px;
+  padding: 80px 20px;
+}
+
+.section.soft {
+  background: #fbf4e6;
 }
 
 h2 {
   text-align: center;
-  margin-bottom: 30px;
+  font-size: 38px;
+  margin-bottom: 50px;
 }
 
-/* ================= CARDS ================= */
+/* CARDS */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(4,1fr);
+  gap: 24px;
 }
+
+.card-grid.two { grid-template-columns: repeat(2,1fr); }
+.card-grid.three { grid-template-columns: repeat(3,1fr); }
 
 .card {
   background: white;
-  padding: 24px;
-  border-radius: 14px;
+  padding: 30px;
+  border-radius: 18px;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-/* ================= ACTION GRID ================= */
+.icon {
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+
+/* ACTION GRID */
 .actions-grid {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(2,1fr);
+  gap: 24px;
 }
 
 .action {
-  padding: 40px;
-  font-size: 18px;
-  border-radius: 16px;
-  border: none;
-  cursor: pointer;
-  color: white;
-}
-
-.create { background: #f97316; }
-.promote { background: #22c55e; }
-.learn { background: #22c55e; }
-.help { background: #fde68a; color: #000; }
-
-/* ================= WHATSAPP ================= */
-.whatsapp {
-  background: #22c55e;
-  color: white;
+  padding: 50px;
   border-radius: 20px;
+  color: white;
+  font-size: 22px;
   text-align: center;
 }
 
-/* ================= FOOTER ================= */
-.footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  background: white;
-  padding: 40px;
-  margin-top: 60px;
+.create { background: #f59e0b; }
+.promote { background: #22c55e; }
+.learn { background: #22c55e; }
+.help { background: #fef3c7; color: #3b2f23; }
+
+/* WHATSAPP */
+.whatsapp {
+  background: #22c55e;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 24px;
+  max-width: 900px;
+  margin: 80px auto;
 }
 
-/* ================= CHAT ================= */
+.btn.secondary {
+  margin-top: 20px;
+  background: white;
+  color: #22c55e;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: none;
+}
+
+/* FOOTER */
+.footer {
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  padding: 50px;
+}
+
+/* CHAT */
 .chat {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 24px;
+  right: 24px;
   width: 60px;
   height: 60px;
   border-radius: 50%;
   background: #22c55e;
   color: white;
-  font-size: 24px;
   border: none;
-}
-
-/* Feature cards */
-.feature-cards {
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 cards side by side */
-  gap: 24px;
-}
-
-
-.feature-card {
-  padding: 32px 24px;
-  border: 1px solid #eadfcf;
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: none;
-}
-
-.feature-card .icon {
-  width: 56px;
-  height: 56px;
-  margin: 0 auto 16px;
-  border-radius: 50%;
-  background: #fff3e6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-}
-
-.feature-card h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 6px;
-  color: #2b1d10;
-}
-
-.feature-card p {
-  font-size: 15px;
-  color: #8a6a4f;
-}
-
-/* FORCE feature cards in one row */
-.features .card-grid {
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr) !important;
-  gap: 24px !important;
-}
-
-/* Card look */
-.features .card {
-  padding: 32px 24px;
-  border-radius: 18px;
-  border: 1px solid #eadfcf;
-  background: #fff;
-  text-align: center;
-}
-
-/* Icon circle */
-.features .icon {
-  width: 56px;
-  height: 56px;
-  margin: 0 auto 16px;
-  border-radius: 50%;
-  background: #fff3e6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
+  font-size: 24px;
 }
