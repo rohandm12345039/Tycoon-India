@@ -15,7 +15,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255,255,255,0.85);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid #eee;
   z-index: 1000;
@@ -30,15 +30,12 @@ body {
   align-items: center;
 }
 
-/* Logo */
 .logo {
   font-size: 22px;
   font-weight: 700;
   color: #f97316;
-  white-space: nowrap;
 }
 
-/* Menu */
 .menu {
   display: flex;
   justify-content: center;
@@ -49,85 +46,64 @@ body {
   text-decoration: none;
   color: #555;
   font-size: 15px;
-  white-space: nowrap;
 }
 
-/* Actions */
 .actions {
   display: flex;
   align-items: center;
   gap: 12px;
-  white-space: nowrap;
 }
 
-/* Language button */
 .lang-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
   padding: 10px 18px;
   border-radius: 999px;
   background: #fdf7ee;
   border: 1px solid #e8dcc8;
   font-size: 14px;
   cursor: pointer;
-  color: #3b2f23;
 }
 
-.lang-btn:hover {
-  background: #f9f1e6;
-}
-
-.lang-btn:focus {
-  outline: none;
-}
-
-/* Sign in button */
 .btn.primary {
   background: #f97316;
-  color: #fff;
-  border-radius: 999px;
+  color: white;
   padding: 10px 20px;
+  border-radius: 999px;
   border: none;
   cursor: pointer;
 }
 
 /* ================= HERO ================= */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 80px;
   text-align: center;
 }
 
-
-
 .hero h1 {
   font-size: 64px;
-  font-weight: 800;   /* thinner */
+  font-weight: 500;   /* thinner */
   color: #4ade80;
+  margin-bottom: 14px;
 }
 
-
-
 .tagline {
-  font-size: 24px;         /* slightly bigger */
-  font-weight: 500;        /* lighter than title */
-  margin: 14px 0 18px;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
   color: #3b2f23;
 }
 
-
 .desc {
   max-width: 780px;
-  margin: 16px auto;
-  color: #7a5c3e;
+  margin: 14px auto;
+  font-size: 17px;
   line-height: 1.8;
-  font-size: 17px;         /* IMPORTANT */
+  color: #7a5c3e;
 }
 
 .desc.long {
-  margin-top: 22px;
   font-size: 16.5px;
 }
-
 
 /* ================= SECTIONS ================= */
 section {
@@ -149,11 +125,11 @@ h2 {
 }
 
 .card {
-  background: #fff;
+  background: white;
   padding: 24px;
   border-radius: 14px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 /* ================= ACTION GRID ================= */
@@ -195,7 +171,7 @@ h2 {
   margin-top: 60px;
 }
 
-/* ================= CHAT BUTTON ================= */
+/* ================= CHAT ================= */
 .chat {
   position: fixed;
   bottom: 20px;
@@ -207,11 +183,4 @@ h2 {
   color: white;
   font-size: 24px;
   border: none;
-  cursor: pointer;
-}
-
-.hero {
-  padding-top: 200px;   /* space from navbar */
-  padding-bottom: 80px;
-  text-align: center;
 }
